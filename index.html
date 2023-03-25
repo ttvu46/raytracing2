@@ -20,6 +20,9 @@
     <h2 align="middle">https://tvu2000.github.io/raytracing2/</h2>
 
     <div class="padded">
+        <h3 align="middle">Overview</h3>
+        <p>In this project, we added additional features to our ray tracer such as more complicated materials, and environment lights. We implemented mirror and glass models with both reflection and refraction. 
+        We also implemented an infinite environment light, which is a light that supplies incident radiance from all directions on the sphere.</p>
 
         <h3 align="middle">Part 1. Mirror and Glass Materials</h3>
 
@@ -84,8 +87,10 @@
               If max_ray_depth is 3, we can see the mirror sphere and glass sphere. We can see the light under 
             the glass sphere. The light from the source hits the top surface of the glass sphere and then hits the bottom surface of the
             sphere. The glass sphere refracts light on the floor. <br>
-              There is not a significant difference when the max_ray_depth = 4, 5, 100. We can see the light on the wall. The light from the source hits the top
-            surface of the glass sphere and then hits the bottom surface of the sphere. The glass sphere refracts light on the floor the wall. 
+              If max_ray_depth is 4, we can see the light on the wall. The light from the source hits the top
+            surface of the glass sphere and then hits the bottom surface of the sphere. The glass sphere refracts light on the floor the wall.<br>
+            If max_ray_depth is 5, the image is brighter as there are more bounces of light. <br>
+            There is not a significant difference when the max_ray_depth = 5 and max_ray_depth = 100.
     
         </p>
         <br>
@@ -101,8 +106,9 @@
             the glass sphere. There are 3 bounces in total. <br>
             When max_ray_depth is 4, the light will hit the top surface of the glass sphere, exit out of the sphere, hit onto the floor, and then hit onto the wall. Now, we can see the light on the wall. There are 4 
             bounces in total. <br>
+            When max_ray_depth is 5, the image is similar to the image that has max_ray_depht = 4. However, it's a bit brigther as there are more bounces of light. <br>
 
-            There is not a significant difference when the max_ray_depth = 4, 5, 100. This occurs because Russian Roulette will terminate early.
+            There is not a significant difference when the max_ray_depth = 5 and max_ray_depth = 100. This occurs because Russian Roulette will terminate early.
         <br>
         
         <h3 align="middle">Part 3. Environment Lightl</h3>
@@ -176,6 +182,9 @@
         <br>
  
         <br>
+
+    <h3 align="middle">Collaboration: </h3>
+    <p>We collaborated on this project by splitting the work. Truc worked on Part 1, and Derwin worked on part 3. </p>
     </div>
 </body>
 </html>
